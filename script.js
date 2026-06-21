@@ -253,39 +253,28 @@ window.addEventListener(
 // MOBILE MENU
 // ======================================
 
-const menuIcon =
-    document.getElementById("menu-icon");
+const menuIcon = document.getElementById("menu-icon");
+const navbar = document.querySelector(".navbar");
 
-const navbar =
-    document.querySelector(".navbar");
+if (menuIcon && navbar) {
 
-menuIcon.addEventListener(
-    "click",
-    () => {
+    menuIcon.addEventListener("click", () => {
 
-        navbar.classList.toggle(
-            "mobile-active"
-        );
+        navbar.classList.toggle("active");
 
-    }
-);
+    });
 
-navLinks.forEach(
-    (link) => {
+    navLinks.forEach((link) => {
 
-        link.addEventListener(
-            "click",
-            () => {
+        link.addEventListener("click", () => {
 
-                navbar.classList.remove(
-                    "mobile-active"
-                );
+            navbar.classList.remove("active");
 
-            }
-        );
+        });
 
-    }
-);
+    });
+
+}
 
 // ======================================
 // CERTIFICATE MODAL

@@ -801,9 +801,21 @@ body {
 }
 
 .project-btn:hover {
-  background: var(--secondary);
 
-  transform: translateY(-3px);
+  background: #0e7490;
+
+  color: white !important;
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 30px rgba(8,145,178,.35);
+
+}
+
+.project-btn:hover i {
+
+  color: white !important;
+
 }
 /* =====================================
    CERTIFICATES SECTION
@@ -1118,23 +1130,68 @@ footer {
 ===================================== */
 
 @media (max-width: 991px) {
-  .navbar {
-    display: none;
+
+  #menu-icon{
+    display:block;
+    cursor:pointer;
   }
 
-  #menu-icon {
-    display: block;
+  .navbar{
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    display:none;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:20px 0;
+
+    border-top:1px solid #e5e7eb;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
   }
 
-  .hero-content h1 {
-    font-size: 3rem;
+  .navbar.active{
+
+    display:flex;
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    z-index:1000;
+    display:none !important;
+
+}
+
+  .hero-content h1{
+    font-size:3rem;
   }
 
-  .profile-card {
-    width: 220px;
-
-    height: 220px;
+  .profile-card{
+    width:220px;
+    height:220px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -1366,8 +1423,12 @@ footer {
 
 /* Primary Buttons */
 
-.primary-btn:hover {
-  background: #1d4ed8;
+.primary-btn:hover{
+
+    background:#0891b2 !important;
+
+    color:#ffffff !important;
+
 }
 
 /* Secondary Buttons */
@@ -1384,37 +1445,7 @@ footer {
     0 0 25px rgba(37, 99, 235, 0.35),
     0 15px 35px rgba(37, 99, 235, 0.2);
 }
-/* FOOTER SOCIAL ICON COLORS */
 
-.footer .social-icons a:nth-child(1) i {
-  color: #181717; /* GitHub */
-}
-
-.footer .social-icons a:nth-child(2) i {
-  color: #0a66c2; /* LinkedIn */
-}
-
-.footer .social-icons a:nth-child(3) i {
-  color: #ea4335; /* Email */
-}
-.footer .social-icons a {
-  transition: all 0.3s ease;
-}
-
-.footer .social-icons a:hover {
-  transform: translateY(-6px) scale(1.1);
-}
-.footer .social-icons a:nth-child(1):hover {
-  box-shadow: 0 0 20px rgba(24, 23, 23, 0.25);
-}
-
-.footer .social-icons a:nth-child(2):hover {
-  box-shadow: 0 0 20px rgba(10, 102, 194, 0.35);
-}
-
-.footer .social-icons a:nth-child(3):hover {
-  box-shadow: 0 0 20px rgba(234, 67, 53, 0.35);
-}
 /* FOOTER ICON COLORS */
 
 .footer-socials a:nth-child(1) i{
@@ -1452,31 +1483,7 @@ footer {
 .footer-socials a:nth-child(3):hover{
     box-shadow:0 0 20px rgba(234,67,53,.35);
 }
-.logo{
 
-    color:#0f172a !important;
-
-}
-
-.heading{
-
-    color:#0f172a !important;
-
-}
-
-.primary-btn{
-
-    background:#06b6d4 !important;
-
-    border-color:#06b6d4 !important;
-
-}
-
-.primary-btn:hover{
-
-    background:#0891b2 !important;
-
-}
 
 .secondary-btn{
 
@@ -1512,5 +1519,67 @@ footer {
     -webkit-text-fill-color:transparent;
 
     letter-spacing:.5px;
+
+}
+.primary-btn{
+
+    background:#0891b2 !important;
+
+    color:#ffffff !important;
+
+    border:none;
+
+}
+
+.primary-btn:hover{
+
+    background:#0e7490 !important;
+
+    color:#ffffff !important;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(8,145,178,.35);
+
+}
+
+.primary-btn:hover i{
+
+    color:#ffffff !important;
+
+}
+#menu-icon{
+    display:none;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    #menu-icon{
+        display:block;
+    }
+
+    .navbar{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:white;
+        flex-direction:column;
+        align-items:center;
+        padding:20px 0;
+        gap:20px;
+        box-shadow:0 10px 20px rgba(0,0,0,.1);
+    }
+
+    .navbar.active{
+        display:flex;
+    }
+}
+.navbar.active{
+
+    display:flex !important;
 
 }
