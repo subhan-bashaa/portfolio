@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Certifications | Shaik Subhan Basha</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .certificates-page {
+
+            min-height: 100vh;
+
+            padding: 120px 8% 80px;
+
+        }
+
+        .certificates-header {
+
+            text-align: center;
+
+            margin-bottom: 60px;
+
+        }
+
+        .certificates-header h1 {
+
+            font-size: 3rem;
+
+            color: var(--heading);
+
+            margin-bottom: 15px;
+
+        }
+
+        .certificates-header p {
+
+            color: var(--text);
+
+            max-width: 700px;
+
+            margin: auto;
+
+        }
+
+        .certificate-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(320px, 1fr));
+
+            gap: 30px;
+
+        }
+
+        .certificate-card {
+
+            background: white;
+
+            border-radius: 20px;
+
+            padding: 30px;
+
+            border: 1px solid var(--border);
+
+            box-shadow: var(--shadow);
+
+            transition: .3s ease;
+
+        }
+
+        .certificate-card:hover {
+
+            transform: translateY(-8px);
+
+        }
+
+        .certificate-card i {
+
+            font-size: 2rem;
+
+            color: var(--primary);
+
+            margin-bottom: 15px;
+
+        }
+
+        .certificate-card h3 {
+
+            margin-bottom: 12px;
+
+            color: var(--heading);
+
+        }
+
+        .certificate-card p {
+
+            color: var(--text);
+
+            font-size: .95rem;
+
+            margin-bottom: 20px;
+
+        }
+
+        .back-home {
+
+            text-align: center;
+
+            margin-top: 60px;
+
+        }
+
+        .certificate-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(320px, 1fr));
+
+            gap: 30px;
+
+            align-items: start;
+
+        }
+
+        .certificate-card {
+
+            width: 100%;
+
+            max-width: none;
+
+            min-height: 260px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+
+            Subhan Basha
+
+        </a>
+
+        <nav class="navbar">
+
+            <a href="index.html">Back To Portfolio</a>
+
+        </nav>
+
+    </header>
+
+    <section class="certificates-page">
+
+        <div class="certificates-header">
+
+            <h1>
+
+                My Certifications
+
+            </h1>
+
+            <p>
+
+                Professional certifications earned in
+                Cloud Computing, Web Development,
+                Artificial Intelligence, Data Science,
+                Programming and Emerging Technologies.
+
+            </p>
+
+        </div>
+        <div class="certificate-grid">
+
+
+        <div class="certificate-card">
+
+            <i class="fa-brands fa-aws"></i>
+
+            <h3>
+                AWS Machine Learning Foundations
+            </h3>
+
+            <p>
+                AWS Academy Certification
+            </p>
+
+            <a href="#" onclick="openCertificate('certificates/aws-machine-learning.pdf')" class="btn primary-btn">
+
+                View Certificate
+
+            </a>
+
+        </div>
+
+        <!-- AWS DATA -->
+
+        <div class="certificate-card">
+
+            <i class="fa-brands fa-aws"></i>
+
+            <h3>
+
+                AWS Data Engineering
+
+            </h3>
+
+            <p>
+
+                AWS Academy Certification
+
+            </p>
+
+            <a href="#" onclick="openCertificate('certificates/aws-data-engineering.pdf')" class="btn primary-btn">
+
+                View Certificate
+
+            </a>
+
+        </div>
+
+        <!-- IBM WEB -->
+
+        <div class="certificate-card">
+
+            <i class="fa-solid fa-globe"></i>
+
+            <h3>
+
+                IBM Web Development
+
+            </h3>
+
+            <p>
+
+                HTML5, CSS3 and JavaScript
+
+            </p>
+
+            <a href="#" onclick="openCertificate('certificates/ibm-web-development.pdf')" class="btn primary-btn">
+
+                View Certificate
+
+            </a>
+
+        </div>
+
+        <!-- IBM CLOUD -->
+
+        <div class="certificate-card">
+
+            <i class="fa-solid fa-cloud"></i>
+
+            <h3>
+
+                IBM Cloud Computing
+
+            </h3>
+
+            <p>
+
+                Introduction To Cloud Computing
+
+            </p>
+
+            <a href="#" onclick="openCertificate('certificates/ibm-cloud-computing.pdf')" class="btn primary-btn">
+
+                View Certificate
+
+            </a>
+
+        </div>
+
+        <!-- QUANTUM -->
+
+        <div class="certificate-card">
+
+            <i class="fa-solid fa-atom"></i>
+
+            <h3>
+
+                Quantum Fundamentals
+
+            </h3>
+
+            <p>
+
+                WISER Quantum Program
+
+            </p>
+
+            <a href="#" onclick="openCertificate('certificates/quantum-fundamentals.pdf')" class="btn primary-btn">
+
+                View Certificate
+
+            </a>
+
+        </div>
+
+        <!-- DATA SCIENCE -->
+
+        <div class="certificate-card">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h3>
+
+                Introduction To Data Science
+
+            </h3>
+
+            <p>
+
+                Cisco Networking Academy
+
+            </p>
+
+            <a href="#" onclick="openCertificate('certificates/introduction-to-data-science.pdf')"
+                class="btn primary-btn">
+
+                View Certificate
+
+            </a>
+
+        </div>
+
+        <!-- PYTHON 1 -->
+
+        <div class="certificate-card">
+
+            <i class="fa-brands fa-python"></i>
+
+            <h3>
+
+                Python Essentials 1
+
+            </h3>
+
+            <p>
+
+                Cisco Networking Academy
+
+            </p>
+
+            <a href="#" onclick="openCertificate('certificates/python-essentials-1.pdf')" class="btn primary-btn">
+
+                View Certificate
+
+            </a>
+
+        </div>
+
+        <!-- PYTHON 2 -->
+
+        <div class="certificate-card">
+
+            <i class="fa-brands fa-python"></i>
+
+            <h3>
+
+                Python Essentials 2
+
+            </h3>
+
+            <p>
+
+                Cisco Networking Academy
+
+            </p>
+
+            <a href="#" onclick="openCertificate('certificates/python-essentials-2.pdf')" class="btn primary-btn">
+
+                View Certificate
+
+            </a>
+
+        </div>
+
+        <!-- SQL -->
+
+        <div class="certificate-card">
+
+            <i class="fa-solid fa-database"></i>
+
+            <h3>
+
+                SQL Basic
+
+            </h3>
+
+            <p>
+
+                HackerRank Skill Certification
+
+            </p>
+
+            <a href="#" onclick="openCertificate('certificates/sql-basic.pdf')" class="btn primary-btn">
+
+                View Certificate
+
+            </a>
+
+        </div>
+
+        <!-- SERVICENOW -->
+
+        <div class="certificate-card">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <h3>
+
+                ServiceNow Micro Certification
+
+            </h3>
+
+            <p>
+
+                Welcome To ServiceNow
+
+            </p>
+
+            <a href="#" onclick="openCertificate('certificates/servicenow-micro-certification.pdf')"
+                class="btn primary-btn">
+
+                View Certificate
+
+            </a>
+
+        </div>
+
+        <!-- SQL NOSQL -->
+
+        <div class="certificate-card">
+
+            <i class="fa-solid fa-award"></i>
+
+            <h3>
+
+                SQL vs NoSQL
+
+            </h3>
+
+            <p>
+
+                Scaler Topics Certificate
+
+            </p>
+
+            <a href="#" onclick="openCertificate('certificates/sql-nosql.png')" class="btn primary-btn">
+
+                View Certificate
+
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="back-home">
+
+            <a href="index.html" class="btn secondary-btn">
+
+                ← Back To Portfolio
+
+            </a>
+
+        </div>
+
+    </section>
+    </section>
+
+    <!-- CERTIFICATE MODAL -->
+
+    <div id="certificateModal" class="modal">
+
+        <span class="close-btn" onclick="closeCertificate()">
+            &times;
+        </span>
+
+        <iframe id="certificateFrame"></iframe>
+
+    </div>
+
+    <style>
+        .modal {
+
+            display: none;
+
+            position: fixed;
+
+            inset: 0;
+
+            background: rgba(0, 0, 0, .85);
+
+            z-index: 99999;
+
+        }
+
+        .modal iframe {
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            width: 90%;
+
+            max-width: 1200px;
+
+            height: 90%;
+
+            background: white;
+
+            border: none;
+
+            border-radius: 15px;
+
+        }
+
+        .close-btn {
+
+            position: absolute;
+
+            top: 15px;
+
+            right: 30px;
+
+            color: white;
+
+            font-size: 45px;
+
+            cursor: pointer;
+
+            z-index: 100000;
+
+        }
+    </style>
+
+    <script>
+
+        function openCertificate(pdf) {
+
+            document.getElementById("certificateModal").style.display = "block";
+
+            document.getElementById("certificateFrame").src = pdf;
+
+            document.body.style.overflow = "hidden";
+
+        }
+
+        function closeCertificate() {
+
+            document.getElementById("certificateModal").style.display = "none";
+
+            document.getElementById("certificateFrame").src = "";
+
+            document.body.style.overflow = "auto";
+
+        }
+
+        window.onclick = function (e) {
+
+            const modal = document.getElementById("certificateModal");
+
+            if (e.target === modal) {
+
+                closeCertificate();
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+</body>
+
+</html>
