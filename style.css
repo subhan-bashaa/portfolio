@@ -256,7 +256,7 @@ body {
 .hero-greet {
   color: var(--primary);
 
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 
   font-weight: 600;
 
@@ -303,15 +303,19 @@ body {
 }
 
 .hero-description {
-  max-width: 760px;
 
-  margin: auto;
+    max-width: 760px;
 
-  color: var(--text);
+    margin: auto;
 
-  line-height: 1.9;
+    color: var(--text);
 
-  margin-bottom: 25px;
+    font-size: 1rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+
 }
 
 .hero-contact {
@@ -1581,5 +1585,26 @@ footer {
 .navbar.active{
 
     display:flex !important;
+
+}
+@media (max-width:768px){
+
+    .social-icons{
+
+        display:flex;
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    .social-icons a{
+
+        width:60px;
+        height:60px;
+
+    }
 
 }
